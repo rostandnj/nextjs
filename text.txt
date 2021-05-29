@@ -1,0 +1,38 @@
+Explication
+
+pour inkspace, il y'a une image à la racine du dossier
+
+lien pour tester http://localhost:4200/posts/first-post
+
+j'ai mis dans le repertoire pages/Component la roadmap
+
+    le fichier est déjà responsive ceci du aux paramètres width="100%" et height="100%" dans le svg
+    ja'ai ajouté la propriété opacity = 1 juste pour que tu voiyes les zones
+    j'ai ajouté onClik pour tester le click sur les zones
+
+    pour ajouter les objets ou texte dans une zone, tu dois créer ceci dans la balise svg:
+
+    (J'ai fait un exemple avec l'étoile 1 et le timer)
+    <defs>
+                    <pattern
+                        id="pattern1" // l'id  du pattern qui sera appelé dans la propriété fill du path ex: fill="url(#pattern1)"
+                        patternUnits="userSpaceOnUse" // la façon de disposer les éléments
+                        width="350"  //largeur de l'élément à ajouter
+                        height="350" //hauteur de l'élément à ajouter
+                    >
+                        <image  // la balise image si l'élément est une image et texte si c'est un texte
+                            href="../../star.png"
+                            height={100}
+                            width={100}
+                            x={0}
+                            y={50}
+
+                        />
+                    </pattern>
+                </defs>
+
+
+
+
+
+
